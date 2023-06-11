@@ -1,0 +1,12 @@
+{
+  "email": "tanya.dyn121@gmail.com",
+  "password": "01234567qwq",
+  "securityQuestion": "Name of your favorite pet?",
+  "answer": "Archi",
+  "invalidEmail": "tanya",
+  "invalidPassword": "123",
+  "emailForgotPassword": "alexbort2@gmail.com",
+  "newPassword": "new123",
+  "answerFogotPassword": "15/03/70",
+  "commentUser": "Great web application. Thank You!"
+}
