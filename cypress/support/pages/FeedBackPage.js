@@ -9,7 +9,9 @@ class FeedBackPage {
     }
 
     getSlider() {
-        return cy.get('#rating')
+        cy.get('[id="rating"]')
+            .type('{rightArrow}{rightArrow}{leftArrow}')
+        return this
     }
 
     getSubmitButton() {

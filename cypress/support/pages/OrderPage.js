@@ -1,11 +1,11 @@
 class OrderPage {
 
     getButtonBasket() {
-        return cy.get('[routerlink="/basket"]')
+        return cy.get('[routerlink="/basket"]');       
     }
 
     getButtonCheckout() {
-        return cy.get('#checkoutButton')
+        return cy.get('#checkoutButton',{ timeout: 500 })   
     }
 
     getButtonAddress() {

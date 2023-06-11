@@ -10,14 +10,12 @@ describe('Feedback form', () => {
         feedBackPage.visit();
         homePage.getWelcomeBanner().click();
         feedBackPage.getCommentField().type(user.commentUser)
+        feedBackPage.getSlider();
 
-        feedBackPage.getSlider().click()
-        
         captchaResult();
         
         feedBackPage.getSubmitButton().click();
         feedBackPage.getSuccessFeedbackMessage();
-
     })
 
 })
