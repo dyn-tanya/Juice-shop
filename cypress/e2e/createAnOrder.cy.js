@@ -1,7 +1,7 @@
 import homePage from '../support/pages/HomePage'
 import loginPage from '../support/pages/LoginPage'
 import { faker } from '@faker-js/faker'
-import { searchProduct } from '../support/pages/helperSearchProduct'
+import { searchProduct } from '../support/helpers/helperSearchProduct'
 import checkout from '../fixtures/checkout.json'
 import user from '../fixtures/user.json'
 import orderPage from '../support/pages/OrderPage'

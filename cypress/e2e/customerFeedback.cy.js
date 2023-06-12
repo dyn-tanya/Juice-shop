@@ -1,6 +1,6 @@
 import feedBackPage from '../support/pages/FeedBackPage'
 import homePage from '../support/pages/HomePage';
-import { captchaResult } from '../support/pages/CaptchaFunction'
+import { captchaResult } from '../support/helpers/CaptchaFunction'
 import user from '../fixtures/user.json'
 
 describe('Feedback form', () => {
