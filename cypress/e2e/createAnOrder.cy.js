@@ -13,7 +13,7 @@ checkout.zipCode = faker.location.zipCode('#####');
 checkout.address = faker.location.streetAddress();
 checkout.city = faker.location.city();
 checkout.state = faker.location.state();
-checkout.cardNumber = faker.finance.creditCardNumber('################')
+checkout.cardNumber = faker.finance.creditCardNumber('4###############')
 
 
 describe('Create an Order', () => {
@@ -31,6 +31,8 @@ describe('Create an Order', () => {
         searchProduct(checkout.productName)
 
         orderPage.getButtonBasket().click();
+        
+        orderPage.productVisible(checkout.productName);
         orderPage.getButtonCheckout().click();
 
         orderPage.getButtonAddress().click()
@@ -52,7 +54,7 @@ describe('Create an Order', () => {
 
         orderPage.getButtonCheckout().click();
         orderPage.messageSuccesOrder();
-       
+
     })
 
 

@@ -4,7 +4,7 @@ export function searchProduct(productName) {
     cy.get('.item-name').then((result) => {
 
         if (result.text().includes(productName)) {
-            cy.get(`.mat-grid-tile-content:contains(${productName})`).within(()=>{
+            cy.get(`.mat-grid-tile-content:contains(${productName})`).within(() => {
                 cy.contains('Add to Basket').click();
             })
 
@@ -14,5 +14,5 @@ export function searchProduct(productName) {
         }
 
     })
-  
+
 }

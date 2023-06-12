@@ -4,8 +4,12 @@ class OrderPage {
         return cy.get('[routerlink="/basket"]');       
     }
 
+    productVisible(productName){
+        return cy.contains(productName).should('be.visible');
+    }
     getButtonCheckout() {
-        return cy.get('#checkoutButton',{ timeout: 500 })   
+        return cy.get('#checkoutButton', {timeout:500})   
+         
     }
 
     getButtonAddress() {
